@@ -87,19 +87,19 @@ const play = ()=>{
 const winner = ()=>{
     const img = document.getElementsByTagName('img');
     setTimeout(() => {
-        if(img[player2+4].src == 'http://127.0.0.1:5000/assets/img/Piedra.jpg.png'){
+        if(img[player2+4].src == 'https://rock-paper-and-scisor.vercel.app/assets/img/Piedra.jpg.png'){
             if(player1 == 0){
                 showWinner(0);
             }else if(player1 == 1){
                 showWinner(1);
             }else showWinner(2);            
-        }else if(img[player2+4].src == 'http://127.0.0.1:5000/assets/img/Papel.jpg.png'){
+        }else if(img[player2+4].src == 'https://rock-paper-and-scisor.vercel.app/assets/img/Papel.jpg.png'){
             if(player1 == 0){
                 showWinner(2);
             }else if(player1 == 1){
                 showWinner(0);
             }else showWinner(1);
-        }else if(img[player2+4].src == 'http://127.0.0.1:5000/assets/img/Tijera.jpg.png'){
+        }else if(img[player2+4].src == 'https://rock-paper-and-scisor.vercel.app/assets/img/Tijera.jpg.png'){
             if(player1 == 0){
                 showWinner(1);
             }else if(player1 == 1){
